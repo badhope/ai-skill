@@ -1,0 +1,109 @@
+{
+  "name": "ai-skill",
+  "description": "Woclaw 官方技能仓库",
+  "version": "1.0.0",
+  "updated": "2026-03-29",
+  "url": "https://github.com/badhope/ai-skill",
+  "skills": [
+    {
+      "name": "file-organizer",
+      "version": "1.0.0",
+      "description": "自动整理文件夹，按类型/日期分类",
+      "description_en": "Auto-organize files by type or date",
+      "author": "Woclaw Team",
+      "category": "file",
+      "tags": ["file", "organize", "automation"],
+      "requires": []
+    },
+    {
+      "name": "screenshot-ocr",
+      "version": "1.0.0",
+      "description": "截图文字识别，提取图片中的文字",
+      "description_en": "Extract text from screenshots using OCR",
+      "author": "Woclaw Team",
+      "category": "screenshot",
+      "tags": ["screenshot", "ocr", "text"],
+      "requires": ["Pillow"]
+    },
+    {
+      "name": "habit-tracker",
+      "version": "1.0.0",
+      "description": "习惯追踪，每日打卡，追踪进度",
+      "description_en": "Daily habit tracking and progress monitoring",
+      "author": "Woclaw Team",
+      "category": "productivity",
+      "tags": ["habit", "tracker", "daily"],
+      "requires": []
+    },
+    {
+      "name": "web-scraper",
+      "version": "1.0.0",
+      "description": "网页内容抓取，自动提取网页信息",
+      "description_en": "Web content scraping and extraction",
+      "author": "Woclaw Team",
+      "category": "web",
+      "tags": ["web", "scraper", "crawl"],
+      "requires": ["aiohttp", "beautifulsoup4"]
+    },
+    {
+      "name": "news-digest",
+      "version": "1.0.0",
+      "description": "每日新闻摘要，聚合多源新闻",
+      "description_en": "Daily news digest from multiple sources",
+      "author": "Woclaw Team",
+      "category": "information",
+      "tags": ["news", "digest", "rss"],
+      "requires": ["feedparser"]
+    },
+    {
+      "name": "quick-note",
+      "version": "1.0.0",
+      "description": "快捷笔记，快速记录想法",
+      "description_en": "Quick note taking",
+      "author": "Woclaw Team",
+      "category": "productivity",
+      "tags": ["note", "quick", "productivity"],
+      "requires": []
+    },
+    {
+      "name": "todo-list",
+      "version": "1.0.0",
+      "description": "待办清单管理",
+      "description_en": "Todo list management",
+      "author": "Woclaw Team",
+      "category": "productivity",
+      "tags": ["todo", "task", "productivity"],
+      "requires": []
+    },
+    {
+      "name": "schedule-task",
+      "version": "1.0.0",
+      "description": "定时任务执行",
+      "description_en": "Schedule recurring tasks",
+      "author": "Woclaw Team",
+      "category": "automation",
+      "tags": ["schedule", "task", "automation"],
+      "requires": []
+    },
+    {
+      "name": "auto-backup",
+      "version": "1.0.0",
+      "description": "自动备份重要文件",
+      "description_en": "Automatic file backup",
+      "author": "Woclaw Team",
+      "category": "automation",
+      "tags": ["backup", "automation", "file"],
+      "requires": []
+    },
+    {
+      "name": "screenshot-translate",
+      "version": "1.0.0",
+      "description": "截图翻译，识别并翻译截图内容",
+      "description_en": "Translate screenshot content",
+      "author": "Woclaw Team",
+      "category": "screenshot",
+      "tags": ["screenshot", "translate", "ocr"],
+      "requires": ["Pillow"]
+    }
+  ]
+}

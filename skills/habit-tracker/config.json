@@ -1,0 +1,12 @@
+{
+  "name": "habit-tracker",
+  "version": "1.0.0",
+  "description": "习惯追踪，每日打卡，追踪进度",
+  "description_en": "Daily habit tracking and progress monitoring",
+  "author": "Woclaw Team",
+  "category": "productivity",
+  "tags": ["habit", "tracker", "daily", "productivity"],
+  "requires": [],
+  "woclaw_min_version": "0.2.0",
+  "entry": "scripts/run.py"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "screenshot-ocr",
+  "version": "1.0.0",
+  "description": "截图文字识别，提取图片中的文字",
+  "description_en": "Extract text from screenshots using OCR",
+  "author": "Woclaw Team",
+  "category": "screenshot",
+  "tags": ["screenshot", "ocr", "text", "image"],
+  "requires": ["Pillow", "pytesseract"],
+  "woclaw_min_version": "0.2.0",
+  "entry": "scripts/run.py"
+}

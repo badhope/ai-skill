@@ -1,0 +1,25 @@
+{
+  "name": "file-organizer",
+  "version": "1.0.0",
+  "description": "自动整理文件夹，按类型/日期分类",
+  "description_en": "Auto-organize files by type or date",
+  "author": "Woclaw Team",
+  "category": "file",
+  "tags": ["file", "organize", "automation"],
+  "requires": [],
+  "woclaw_min_version": "0.2.0",
+  "entry": "scripts/run.py",
+  "parameters": {
+    "directory": {
+      "type": "string",
+      "description": "要整理的目录路径",
+      "required": true
+    },
+    "mode": {
+      "type": "string",
+      "description": "整理方式: type(按类型) / date(按日期)",
+      "default": "type",
+      "choices": ["type", "date"]
+    }
+  }
+}
