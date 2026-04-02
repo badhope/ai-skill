@@ -1,176 +1,255 @@
-# ai-skill - Woclaw 技能仓库 🌟
+<!-- Powered by AI Agent -->
+<!-- Sponsored by OpenClaw -->
 
-> Woclaw 启明星 AI 助手的官方技能存储库
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=50&duration=4000&pause=1000&color=c9a227&background=0F0F23&center=true&vCenter=true&multiline=true&width=900&height=100&lines=ai-skill%20~%20Official%20Skill%20Repository%20for%20Woclaw" alt="ai-skill - Official Skill Repository">
+</p>
 
-[English](README_en.md) | [中文](README.md) | [日本語](README_ja.md)
-
----
-
-## ✨ 什么是 ai-skill？
-
-**ai-skill** 是 [Woclaw 启明星 AI 助手](https://github.com/badhope/Woclaw) 的官方技能仓库。
-
-这里收录了所有可在 Woclaw 中使用的技能（Skills），让 Woclaw 能够完成各种特定任务。
-
-## 🎯 快速开始
-
-### 在 Woclaw 中安装技能
-
-```bash
-# 安装技能
-woclaw skill install <skill-name>
-
-# 示例：安装文件整理技能
-woclaw skill install file-organizer
-
-# 安装多个技能
-woclaw skill install file-organizer screenshot-ocr habit-tracker
-```
-
-### 从 GitHub 直接安装
-
-```bash
-# 直接从 GitHub 安装
-woclaw skill install badhope/ai-skill/file-organizer
-
-# 指定分支
-woclaw skill install badhope/ai-skill/web-scraper --branch main
-```
-
-## 📦 内置技能
-
-### 文件处理类
-| 技能 | 说明 | 命令 |
-|------|------|------|
-| `file-organizer` | 文件自动整理 | 按类型/日期整理文件 |
-| `batch-rename` | 批量重命名 | 批量修改文件名 |
-| `duplicate-finder` | 重复文件查找 | 查找并清理重复文件 |
-
-### 截图识别类
-| 技能 | 说明 | 命令 |
-|------|------|------|
-| `screenshot-ocr` | 截图文字识别 | 从截图提取文字 |
-| `screenshot-translate` | 截图翻译 | 截图内容翻译 |
-
-### 自动化类
-| 技能 | 说明 | 命令 |
-|------|------|------|
-| `habit-tracker` | 习惯追踪 | 每日打卡、追踪进度 |
-| `schedule-task` | 定时任务 | 定时执行任务 |
-| `auto-backup` | 自动备份 | 定时备份重要文件 |
-
-### 信息处理类
-| 技能 | 说明 | 命令 |
-|------|------|------|
-| `web-scraper` | 网页抓取 | 自动抓取网页内容 |
-| `rss-reader` | RSS 阅读器 | 聚合订阅源 |
-| `news-digest` | 新闻摘要 | 每日新闻摘要 |
-
-### 效率工具类
-| 技能 | 说明 | 命令 |
-|------|------|------|
-| `quick-note` | 快捷笔记 | 快速记录想法 |
-| `link-saver` | 链接收藏 | 收藏和管理链接 |
-| `todo-list` | 待办清单 | 管理待办事项 |
-
-## 🛠️ 开发自己的技能
-
-### 技能结构
-
-```
-my-skill/
-├── SKILL.md          # 技能定义（必需）
-├── scripts/
-│   └── run.py        # 技能执行脚本
-├── config.json       # 技能配置
-├── requirements.txt  # 依赖
-└── README.md        # 说明文档
-```
-
-### SKILL.md 示例
-
-```markdown
-# 我的技能
-
-## 基本信息
-- **名称**: my-skill
-- **版本**: 1.0.0
-- **作者**: 你的名字
-- **描述**: 这个技能做什么
-
-## 使用方法
-`woclaw skill run my-skill --arg value`
-
-## 参数说明
-| 参数 | 类型 | 说明 | 默认值 |
-|------|------|------|--------|
-| --arg | string | 输入参数 | - |
-
-## 示例
-```bash
-woclaw skill run my-skill --arg hello
-```
-```
-
-### 发布技能
-
-1. Fork 这个仓库
-2. 在 `skills/` 目录下创建你的技能
-3. 提交 Pull Request
-4. 审核通过后合并
-
-## 📁 目录结构
-
-```
-ai-skill/
-├── README.md
-├── README_en.md
-├── README_ja.md
-├── skills/           # 技能目录
-│   ├── file-organizer/
-│   ├── screenshot-ocr/
-│   ├── habit-tracker/
-│   └── ...
-├── docs/             # 文档
-├── scripts/         # 工具脚本
-└── tests/           # 测试
-```
-
-## 🤝 贡献
-
-欢迎提交新的技能！
-
-### 贡献流程
-1. Fork 仓库
-2. 创建技能目录
-3. 编写 SKILL.md
-4. 提交 PR
-5. 等待审核
-
-### 技能审核标准
-- ✅ SKILL.md 格式正确
-- ✅ 有完整的使用说明
-- ✅ 代码安全，无恶意行为
-- ✅ 有适当的错误处理
-
-## 📄 许可证
-
-MIT License
-
-## 🔗 相关链接
-
-- [Woclaw 主仓库](https://github.com/badhope/Woclaw)
-- [Woclaw 文档](https://github.com/badhope/Woclaw#readme)
-- [问题反馈](https://github.com/badhope/Woclaw/issues)
-
----
+<p align="center">
+  <a href="https://github.com/badhope/ai-skill">
+    <img src="https://img.shields.io/badge/Version-v1.0.0-c9a227?style=for-the-badge" alt="Version">
+  </a>
+  <a href="https://github.com/badhope/ai-skill/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-gold?style=for-the-badge" alt="License">
+  </a>
+  <a href="https://github.com/badhope/ai-skill/stargazers">
+    <img src="https://img.shields.io/github/stars/badhope/ai-skill?style=for-the-badge&color=yellow" alt="Stars">
+  </a>
+  <a href="https://github.com/badhope/Woclaw">
+    <img src="https://img.shields.io/badge/For-Woclaw-blue?style=for-the-badge&logo=github" alt="Woclaw">
+  </a>
+</p>
 
 <div align="center">
 
-**⭐ 如果 ai-skill 对你有帮助，请给我们一个 Star！**
-
-*让 Woclaw 更强大*
-
-**Made with ✨ by Woclaw Team**
+```
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║    ██╗   ██╗ ██████╗ ██████╗ ███████╗███╗   ███╗ ██████╗ ███╗   ██╗    ║
+║    ██║   ██║██╔═══██╗██╔══██╗██╔════╝████╗ ████║██╔═══██╗████╗  ██║    ║
+║    ██║   ██║██║   ██║██║  ██║█████╗  ██╔████╔██║██║   ██║██╔██╗ ██║    ║
+║    ╚██╗ ██╔╝██║   ██║██║  ██║██╔══╝  ██║╚██╔╝██║██║   ██║██║╚██╗██║    ║
+║     ╚████╔╝ ╚██████╔╝██████╔╝███████╗██║ ╚═╝ ██║╚██████╔╝██║ ╚████║    ║
+║      ╚═══╝   ╚═════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ║
+║                                                                          ║
+║               🌟  Official Skill Repository for Woclaw  🌟                        ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+```
 
 </div>
+
+---
+
+## 🎯 What is ai-skill?
+
+**ai-skill** is the official skill repository for **[Woclaw 启明星 AI Assistant](https://github.com/badhope/Woclaw)**.
+
+Skills are modular, reusable units of capability that extend Woclaw's ability to perform specific tasks — from file organization to screenshot OCR, from habit tracking to web automation.
+
+> *"One skill, infinite possibilities."*
+
+---
+
+## ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| 🎯 **Modular Design** | Each skill is self-contained and reusable |
+| 🚀 **One-Click Install** | `woclaw skill install <name>` to add any skill |
+| 📦 **Extensible** | Easy to create and share your own skills |
+| 🔧 **Configurable** | Customize skill behavior with settings |
+| 📚 **Well Documented** | Every skill has usage examples |
+
+---
+
+## 📦 Available Skills
+
+| Category | Skills | Description |
+|----------|--------|-------------|
+| 🗂️ **File Management** | file-organizer | Organize files by type, date, or custom rules |
+| 🖼️ **Media** | screenshot-ocr | OCR text from screenshots |
+| 📊 **Productivity** | habit-tracker | Track daily habits and routines |
+| 🌐 **Automation** | web-automation | Browser automation workflows |
+| 🔍 **Search** | content-search | Search across documents and files |
+| 📝 **Notes** | note-taking | Create and manage notes |
+| 🗓️ **Calendar** | calendar-sync | Sync with calendar apps |
+| 💻 **Development** | code-helper | Programming assistance |
+
+---
+
+## 🚀 Quick Start
+
+### Install a Skill
+
+```bash
+# Using Woclaw CLI
+woclaw skill install <skill-name>
+
+# Example: Install file organizer
+woclaw skill install file-organizer
+
+# Install multiple skills at once
+woclaw skill install file-organizer screenshot-ocr habit-tracker
+```
+
+### Install from GitHub
+
+```bash
+# Clone this repository
+git clone https://github.com/badhope/ai-skill.git
+
+# Copy skills to Woclaw's skill directory
+cp -r ai-skill/* ~/.woclaw/skills/
+```
+
+---
+
+## 🛠️ Create Your Own Skill
+
+### Skill Structure
+
+```
+my-skill/
+├── SKILL.md          # Skill definition & instructions
+├── README.md         # Documentation
+├── src/              # Source code
+│   └── index.ts     # Entry point
+├── config/           # Default config
+└── tests/            # Unit tests
+```
+
+### SKILL.md Template
+
+```markdown
+# My Skill
+
+## Description
+Brief description of what this skill does.
+
+## Usage
+How to use this skill.
+
+## Configuration
+Available settings and options.
+
+## Examples
+Usage examples and outputs.
+```
+
+### Publish Your Skill
+
+1. Create a new repository with your skill
+2. Add a `SKILL.md` file
+3. Submit a PR to this repository
+4. Get featured in the official catalog!
+
+---
+
+## 🏗️ Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                            Woclaw + Skills                                    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌─────────────────┐                                                        │
+│  │     Woclaw      │                                                        │
+│  │   Supervisor    │                                                        │
+│  └────────┬────────┘                                                        │
+│           │                                                                  │
+│  ┌────────┴────────┐                                                        │
+│  │  Skill Router   │                                                        │
+│  └────────┬────────┘                                                        │
+│           │                                                                  │
+│  ┌────────┴────────────────────────────────────────┐                       │
+│  │                   Skills                         │                       │
+│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐        │                       │
+│  │  │  File   │  │  Media  │  │Product. │  ...    │                       │
+│  │  │Organizer│  │  OCR    │  │ Tracker │        │                       │
+│  │  └─────────┘  └─────────┘  └─────────┘        │                       │
+│  └────────────────────────────────────────────────┘                       │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📂 Project Structure
+
+```
+ai-skill/
+├── README.md              # This file (Chinese version)
+├── README_en.md           # English version
+├── README_ja.md           # Japanese version
+├── LICENSE                # MIT License
+├── skills/               # Skill packages
+│   ├── file-organizer/   # File organization skill
+│   ├── screenshot-ocr/   # Screenshot OCR skill
+│   ├── habit-tracker/    # Habit tracking skill
+│   └── ...
+├── scripts/              # Utility scripts
+├── docs/                 # Documentation
+└── CONTRIBUTING.md       # Contribution guide
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md).
+
+### How to Contribute
+
+1. 🍴 Fork this repository
+2. 🌿 Create your skill (`git checkout -b skill/my-awesome-skill`)
+3. 💾 Add your skill files
+4. 📝 Write documentation
+5. 📤 Submit a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see [LICENSE](LICENSE).
+
+---
+
+## 🙏 Acknowledgments
+
+- **[Woclaw](https://github.com/badhope/Woclaw)** - The AI assistant that powers this skill system
+- **[OpenClaw](https://github.com/openclaw/openclaw)** - The agent platform that inspired this project
+
+---
+
+## 📞 Support
+
+| Channel | Link |
+|---------|------|
+| 🐛 **Bug Reports** | [GitHub Issues](https://github.com/badhope/ai-skill/issues) |
+| 💬 **Discussions** | [GitHub Discussions](https://github.com/badhope/ai-skill/discussions) |
+
+---
+
+<p align="center">
+  <strong>⭐ If this project helps you, please give it a star! ⭐</strong>
+</p>
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/badhope">Woclaw Team</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/badhope/ai-skill">Home</a> •
+  <a href="https://github.com/badhope/ai-skill/releases">Releases</a> •
+  <a href="https://github.com/badhope/Woclaw">Woclaw</a>
+</p>
+
+---
+
+<!-- MARKDOWN BADGES -->
+
+[version-shield]: https://img.shields.io/badge/Version-v1.0.0-c9a227?style=for-the-badge
+[license-shield]: https://img.shields.io/badge/License-MIT-gold?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/badhope/ai-skill?style=for-the-badge&color=yellow
+[woclaw-shield]: https://img.shields.io/badge/For-Woclaw-blue?style=for-the-badge&logo=github
