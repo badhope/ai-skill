@@ -1,0 +1,172 @@
+{
+  "name": "AI-SKILL",
+  "owner": {
+    "name": "badhope",
+    "url": "https://github.com/badhope"
+  },
+  "description": "2200+ production-ready universal agent skills across 13+ domains, compatible with all major platforms. Curated from Anthropic Official Skills, Matt Pocock's Collection, Alireza Rezvani's 272 skills, Fullstack Skills, Antigravity Awesome Skills, AI Research Skills, Agent Skills Hub, and Agent Skills Library. Modified and enhanced by badhope.",
+  "homepage": "https://github.com/badhope/AI-SKILL",
+  "repository": "https://github.com/badhope/AI-SKILL",
+  "metadata": {
+    "description": "The largest universal agent skill collection: 2200+ skills from multiple sources, curated, standardized, and enhanced for cross-platform compatibility.",
+    "version": "4.0.0",
+    "platforms": ["claude-code", "claude-ai", "cursor", "gemini-cli", "codex-cli", "doubao", "qwen", "spark", "moonshot", "baidu", "alibaba"],
+    "author": "Curated and modified by badhope",
+    "license": "MIT",
+    "sources": [
+      "Anthropic Official Skills",
+      "Matt Pocock's Collection",
+      "Alireza Rezvani's Skills",
+      "Fullstack Skills",
+      "Antigravity Awesome Skills",
+      "AI Research Skills",
+      "Agent Skills Hub",
+      "Agent Skills Library"
+    ]
+  },
+  "plugins": [
+    {
+      "name": "ai-skills",
+      "source": "./skills/ai",
+      "description": "800+ AI/agent skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Anthropic, Matt Pocock, Alireza Rezvani, Agent Skills Hub, Antigravity, and badhope"
+      },
+      "keywords": ["ai", "agent", "skills", "rag", "prompt-engineering", "llm"],
+      "category": "ai"
+    },
+    {
+      "name": "development-skills",
+      "source": "./skills/development",
+      "description": "600+ development skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Anthropic, Matt Pocock, Alireza Rezvani, Fullstack Skills, and badhope"
+      },
+      "keywords": ["development", "frontend", "backend", "devops", "ai", "ml", "testing", "react", "vue", "python", "javascript"],
+      "category": "development"
+    },
+    {
+      "name": "tools-skills",
+      "source": "./skills/tools",
+      "description": "400+ utility skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Anthropic, Matt Pocock, Alireza Rezvani, and badhope"
+      },
+      "keywords": ["tools", "utility", "pdf", "office", "automation", "productivity"],
+      "category": "tools"
+    },
+    {
+      "name": "product-skills",
+      "source": "./skills/product",
+      "description": "80+ product skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Original contributions, Alireza Rezvani, and badhope"
+      },
+      "keywords": ["product", "pm", "prd", "ux", "agile", "product-management", "okr"],
+      "category": "product"
+    },
+    {
+      "name": "business-skills",
+      "source": "./skills/business",
+      "description": "100+ business skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Anthropic, Alireza Rezvani, and badhope"
+      },
+      "keywords": ["business", "marketing", "sales", "customer-success", "seo", "growth"],
+      "category": "business"
+    },
+    {
+      "name": "design-skills",
+      "source": "./skills/design",
+      "description": "Design skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Anthropic, and badhope"
+      },
+      "keywords": ["design", "frontend", "ui", "ux", "generative-art", "themes"],
+      "category": "design"
+    },
+    {
+      "name": "finance-skills",
+      "source": "./skills/finance",
+      "description": "Finance skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Alireza Rezvani, and badhope"
+      },
+      "keywords": ["finance", "valuation", "saas-metrics", "budgeting"],
+      "category": "finance"
+    },
+    {
+      "name": "compliance-skills",
+      "source": "./skills/compliance",
+      "description": "Compliance skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Alireza Rezvani, and badhope"
+      },
+      "keywords": ["compliance", "gdpr", "iso-27001", "soc2", "regulatory", "ai-safety"],
+      "category": "compliance"
+    },
+    {
+      "name": "leadership-skills",
+      "source": "./skills/leadership",
+      "description": "Leadership skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Alireza Rezvani, and badhope"
+      },
+      "keywords": ["leadership", "executive", "ceo", "cto", "cfo", "strategy"],
+      "category": "leadership"
+    },
+    {
+      "name": "devops-skills",
+      "source": "./skills/devops",
+      "description": "DevOps skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Anthropic, Alireza Rezvani, AI Research Skills, and badhope"
+      },
+      "keywords": ["devops", "cicd", "cloud", "kubernetes", "docker", "monitoring"],
+      "category": "devops"
+    },
+    {
+      "name": "data-skills",
+      "source": "./skills/data",
+      "description": "Data skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "AI Research Skills, and badhope"
+      },
+      "keywords": ["data", "analytics", "mlops", "visualization", "bigdata"],
+      "category": "data"
+    },
+    {
+      "name": "docs-skills",
+      "source": "./skills/docs",
+      "description": "Documentation skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Anthropic, and badhope"
+      },
+      "keywords": ["documentation", "writing", "api-docs", "tutorials"],
+      "category": "docs"
+    },
+    {
+      "name": "knowledge-skills",
+      "source": "./skills/knowledge",
+      "description": "Knowledge management skills from multiple sources, curated and enhanced.",
+      "version": "4.0.0",
+      "author": {
+        "name": "Alireza Rezvani, and badhope"
+      },
+      "keywords": ["knowledge", "wiki", "obsidian", "research", "learning"],
+      "category": "knowledge"
+    }
+  ]
+}

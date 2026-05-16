@@ -1,0 +1,87 @@
+{
+  "github": {
+    "token": "YOUR_GITHUB_TOKEN_HERE",
+    "repository": "https://github.com/badhope/AI-SKILL"
+  },
+  "anthropic": {
+    "api_key": "YOUR_ANTHROPIC_API_KEY_HERE",
+    "model": "claude-3-5-sonnet-20261022"
+  },
+  "openai": {
+    "api_key": "YOUR_OPENAI_API_KEY_HERE",
+    "model": "gpt-4o"
+  },
+  "google": {
+    "api_key": "YOUR_GOOGLE_API_KEY_HERE",
+    "model": "gemini-2.0-flash-exp"
+  },
+  "baidu": {
+    "api_key": "YOUR_BAIDU_API_KEY_HERE",
+    "secret_key": "YOUR_BAIDU_SECRET_KEY_HERE"
+  },
+  "alibaba": {
+    "api_key": "YOUR_ALIBABA_API_KEY_HERE",
+    "secret_key": "YOUR_ALIBABA_SECRET_KEY_HERE"
+  },
+  "doubao": {
+    "api_key": "YOUR_DOUBAO_API_KEY_HERE",
+    "secret_key": "YOUR_DOUBAO_SECRET_KEY_HERE"
+  },
+  "qwen": {
+    "api_key": "YOUR_QWEN_API_KEY_HERE"
+  },
+  "spark": {
+    "app_id": "YOUR_SPARK_APP_ID",
+    "api_key": "YOUR_SPARK_API_KEY",
+    "secret_key": "YOUR_SPARK_SECRET_KEY"
+  },
+  "moonshot": {
+    "api_key": "YOUR_MOONSHOT_API_KEY_HERE"
+  },
+  "paths": {
+    "skills": "./skills",
+    "cache": "./.cache",
+    "output": "./output"
+  },
+  "platforms": {
+    "claude_code": {
+      "enabled": true,
+      "config_path": "~/.claude/plugins.json"
+    },
+    "claude_ai": {
+      "enabled": true
+    },
+    "cursor": {
+      "enabled": true,
+      "config_path": "~/.cursor/rules.json"
+    },
+    "gemini_cli": {
+      "enabled": true,
+      "config_path": "~/.gemini/skills.json"
+    },
+    "codex_cli": {
+      "enabled": true
+    },
+    "doubao": {
+      "enabled": true
+    },
+    "qwen": {
+      "enabled": true
+    },
+    "spark": {
+      "enabled": true
+    },
+    "moonshot": {
+      "enabled": true
+    },
+    "baidu": {
+      "enabled": true
+    },
+    "alibaba": {
+      "enabled": true
+    }
+  },
+  "author": "badhope",
+  "project": "AI-SKILL",
+  "version": "4.0.0"
+}

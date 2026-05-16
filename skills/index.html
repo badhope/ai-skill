@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-SKILL 技能导航</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        header { text-align: center; padding: 3rem 0; border-bottom: 1px solid #334155; margin-bottom: 2rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; background: linear-gradient(135deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stats { display: flex; justify-content: center; gap: 3rem; margin-top: 1rem; }
+        .stat { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: bold; color: #60a5fa; }
+        .stat-label { color: #94a3b8; font-size: 0.9rem; }
+        .search-box { max-width: 600px; margin: 2rem auto; }
+        .search-box input { width: 100%; padding: 1rem 1.5rem; border-radius: 12px; border: 2px solid #334155; background: #1e293b; color: white; font-size: 1rem; }
+        .search-box input:focus { outline: none; border-color: #60a5fa; }
+        .categories { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .category-card { background: #1e293b; border-radius: 12px; padding: 1.5rem; border: 1px solid #334155; }
+        .category-card h2 { color: #60a5fa; margin-bottom: 1rem; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center; }
+        .category-card .count { background: #334155; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; }
+        .skill-list { list-style: none; max-height: 300px; overflow-y: auto; }
+        .skill-list li { padding: 0.5rem 0; border-bottom: 1px solid #334155; }
+        .skill-list li:last-child { border-bottom: none; }
+        .skill-list a { color: #94a3b8; text-decoration: none; transition: color 0.2s; display: block; }
+        .skill-list a:hover { color: #60a5fa; }
+        .skill-list .desc { font-size: 0.8rem; color: #64748b; margin-top: 0.25rem; }
+        .platforms { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .platform-tag { background: #334155; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; }
+        footer { text-align: center; padding: 2rem; margin-top: 3rem; color: #64748b; border-top: 1px solid #334155; }
+        footer a { color: #60a5fa; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI-SKILL 技能导航</h1>
+            <p style="color: #94a3b8; font-size: 1.1rem;">2677+ 通用智能体技能库 | 支持 11 平台</p>
+            <div class="stats">
+                <div class="stat"><div class="stat-number">14</div><div class="stat-label">分类</div></div>
+                <div class="stat"><div class="stat-number">2677+</div><div class="stat-label">技能</div></div>
+                <div class="stat"><div class="stat-number">8</div><div class="stat-label">平台</div></div>
+            </div>
+            <div class="platforms">
+<span class="platform-tag">alibaba</span><span class="platform-tag">baidu</span><span class="platform-tag">claude</span><span class="platform-tag">codex</span><span class="platform-tag">cursor</span><span class="platform-tag">gemini</span><span class="platform-tag">qwen</span><span class="platform-tag">spark</span>
+            </div>
+        </header>
+        
+        <div class="search-box">
+            <input type="text" id="search" placeholder="搜索技能..." onkeyup="filterSkills()">
+        </div>
+        
+        <div class="categories" id="categories">
+
+            <div class="category-card" data-category="ai">
+                <h2>🤖 Ai <span class="count">1698</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/ai/"landing-page-generator"">landing-page-generator</a><div class="desc">Generates high-converting Next.js/React landing pages with Tailwind CSS. Uses PA</div></li>
+<li><a href="#skills/ai/"orchestrate-batch-refactor"">orchestrate-batch-refactor</a><div class="desc">Plan and execute large refactors with dependency-aware work packets and parallel</div></li>
+<li><a href="#skills/ai/"yes-md"">yes-md</a><div class="desc">6-layer AI governance: safety gates, evidence-based debugging, anti-slack detect</div></li>
+<li><a href="#skills/ai/'007'">007</a><div class="desc">Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP </div></li>
+<li><a href="#skills/ai/00-andruia-consultant">00-andruia-consultant</a><div class="desc">Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnost</div></li>
+<li><a href="#skills/ai/10-andruia-skill-smith">10-andruia-skill-smith</a><div class="desc">Ingeniero de Sistemas de Andru.ia. Diseña, redacta y despliega nuevas habilidade</div></li>
+<li><a href="#skills/ai/20-andruia-niche-intelligence">20-andruia-niche-intelligence</a><div class="desc">Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de</div></li>
+<li><a href="#skills/ai/3d-web-experience">3d-web-experience</a><div class="desc">Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spl</div></li>
+<li><a href="#skills/ai/API Fuzzing for Bug Bounty">API Fuzzing for Bug Bounty</a><div class="desc">This skill should be used when the user asks to "test API security", "fuzz APIs"</div></li>
+<li><a href="#skills/ai/AWS Penetration Testing">AWS Penetration Testing</a><div class="desc">This skill should be used when the user asks to "pentest AWS", "test AWS securit</div></li>
+<li><a href="#skills/ai/Active Directory Attacks">Active Directory Attacks</a><div class="desc">This skill should be used when the user asks to "attack Active Directory", "expl</div></li>
+<li><a href="#skills/ai/Broken Authentication Testing">Broken Authentication Testing</a><div class="desc">This skill should be used when the user asks to "test for broken authentication </div></li>
+<li><a href="#skills/ai/Burp Suite Web Application Testing">Burp Suite Web Application Testing</a><div class="desc">This skill should be used when the user asks to "intercept HTTP traffic", "modif</div></li>
+<li><a href="#skills/ai/Claude Code Guide">Claude Code Guide</a><div class="desc">Master guide for using Claude Code effectively. Includes configuration templates</div></li>
+<li><a href="#skills/ai/Cloud Penetration Testing">Cloud Penetration Testing</a><div class="desc">This skill should be used when the user asks to "perform cloud penetration testi</div></li>
+<li style="text-align:center;"><a href="#" style="color:#60a5fa;">查看全部 1698 个技能 →</a></li></ul></div>
+
+            <div class="category-card" data-category="business">
+                <h2>💼 Business <span class="count">8</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/business/competitive-matrix">competitive-matrix</a><div class="desc">competitive-matrix command/skill</div></li>
+<li><a href="#skills/business/cs-content-creator">cs-content-creator</a><div class="desc">cs-content-creator command/skill</div></li>
+<li><a href="#skills/business/cs-demand-gen-specialist">cs-demand-gen-specialist</a><div class="desc">cs-demand-gen-specialist command/skill</div></li>
+<li><a href="#skills/business/cs-growth-strategist">cs-growth-strategist</a><div class="desc">cs-growth-strategist command/skill</div></li>
+<li><a href="#skills/business/internal-comms">internal-comms</a><div class="desc">Draft internal company communications including 3P updates, newsletters, FAQ res</div></li>
+<li><a href="#skills/business/saas-health">saas-health</a><div class="desc">saas-health command/skill</div></li>
+<li><a href="#skills/business/seo-auditor">seo-auditor</a><div class="desc">seo-auditor command/skill</div></li>
+<li><a href="#skills/business/slack-gif-creator">slack-gif-creator</a><div class="desc">Knowledge and utilities for creating animated GIFs optimized for Slack. Provides</div></li>
+</ul></div>
+
+            <div class="category-card" data-category="compliance">
+                <h2>✅ Compliance <span class="count">5</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/compliance/constitutional-ai">constitutional-ai</a><div class="desc">Anthropic's method for training harmless AI through self-improvement. Two-phase </div></li>
+<li><a href="#skills/compliance/cs-quality-regulatory">cs-quality-regulatory</a><div class="desc">cs-quality-regulatory command/skill</div></li>
+<li><a href="#skills/compliance/llamaguard">llamaguard</a><div class="desc">Meta's 7-8B specialized moderation model for LLM input/output filtering. 6 safet</div></li>
+<li><a href="#skills/compliance/nemo-guardrails">nemo-guardrails</a><div class="desc">NVIDIA's runtime safety framework for LLM applications. Features jailbreak detec</div></li>
+<li><a href="#skills/compliance/prompt-guard">prompt-guard</a><div class="desc">Meta's 86M prompt injection and jailbreak detector. Filters malicious prompts an</div></li>
+</ul></div>
+
+            <div class="category-card" data-category="data">
+                <h2>📊 Data <span class="count">1</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/data/kql">kql</a><div class="desc">KQL language expertise for writing correct, efficient Kusto Query Language queri</div></li>
+</ul></div>
+
+            <div class="category-card" data-category="design">
+                <h2>🎨 Design <span class="count">5</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/design/algorithmic-art">algorithmic-art</a><div class="desc">Creating algorithmic art using p5.js with seeded randomness and interactive para</div></li>
+<li><a href="#skills/design/brand-guidelines">brand-guidelines</a><div class="desc">Applies Anthropic's official brand colors and typography to any sort of artifact</div></li>
+<li><a href="#skills/design/canvas-design">canvas-design</a><div class="desc">Create beautiful visual art in .png and .pdf documents using design philosophy. </div></li>
+<li><a href="#skills/design/frontend-design">frontend-design</a><div class="desc">Create distinctive, production-grade frontend interfaces with high design qualit</div></li>
+<li><a href="#skills/design/theme-factory">theme-factory</a><div class="desc">Toolkit for styling artifacts with a theme. These artifacts can be slides, docs,</div></li>
+</ul></div>
+
+            <div class="category-card" data-category="development">
+                <h2>💻 Development <span class="count">266</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/development/a11y-audit">a11y-audit</a><div class="desc">a11y-audit command/skill</div></li>
+<li><a href="#skills/development/android-kotlin">android-kotlin</a><div class="desc">Guides Android app development with Kotlin including creating Activities, Fragme</div></li>
+<li><a href="#skills/development/angular">angular</a><div class="desc">Provides comprehensive guidance for Angular framework including components, modu</div></li>
+<li><a href="#skills/development/ant-design-mini">ant-design-mini</a><div class="desc">Builds mini-program UIs with Ant Design Mini components for Alipay and WeChat mi</div></li>
+<li><a href="#skills/development/ant-design-mobile">ant-design-mobile</a><div class="desc">Builds React mobile UIs with Ant Design Mobile (antd-mobile) components includin</div></li>
+<li><a href="#skills/development/ant-design-react">ant-design-react</a><div class="desc">Builds enterprise React UIs with Ant Design (antd) including 60+ components (But</div></li>
+<li><a href="#skills/development/ant-design-vue">ant-design-vue</a><div class="desc">Provides comprehensive guidance for Ant Design Vue (AntDV) component library for</div></li>
+<li><a href="#skills/development/appinsights-instrumentation">appinsights-instrumentation</a><div class="desc">Guidance for instrumenting webapps with Azure Application Insights. Provides tel</div></li>
+<li><a href="#skills/development/appium">appium</a><div class="desc">Provides comprehensive guidance for Appium mobile testing including mobile app a</div></li>
+<li><a href="#skills/development/applicationinsights-web-ts">applicationinsights-web-ts</a><div class="desc">Instrument browser/web apps with the Application Insights JavaScript SDK (@micro</div></li>
+<li><a href="#skills/development/aptos">aptos</a><div class="desc">Aptos Move-based L1 development — Move modules with global storage, resource acc</div></li>
+<li><a href="#skills/development/certora">certora</a><div class="desc">Certora formal verification with CVL — write mathematical proofs for smart contr</div></li>
+<li><a href="#skills/development/chaos-experiment">chaos-experiment</a><div class="desc">chaos-experiment command/skill</div></li>
+<li><a href="#skills/development/claude-api">claude-api</a><div class="desc">Build, debug, and optimize Claude API / Anthropic SDK apps. Apps built with this</div></li>
+<li><a href="#skills/development/cocos2d-x">cocos2d-x</a><div class="desc">Provides comprehensive guidance for Cocos2d-x v4 game engine including scene gra</div></li>
+<li style="text-align:center;"><a href="#" style="color:#60a5fa;">查看全部 266 个技能 →</a></li></ul></div>
+
+            <div class="category-card" data-category="devops">
+                <h2>🚀 Devops <span class="count">367</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/devops/agent-framework-azure-ai-py">agent-framework-azure-ai-py</a><div class="desc">Build Azure AI Foundry agents using the Microsoft Agent Framework Python SDK (ag</div></li>
+<li><a href="#skills/devops/arbitrum">arbitrum</a><div class="desc">Arbitrum Nitro L2 development — deployment, cross-chain messaging (Retryable Tic</div></li>
+<li><a href="#skills/devops/arbitrum-stylus">arbitrum-stylus</a><div class="desc">Arbitrum Stylus development — write smart contracts in Rust, C, and C++ compiled</div></li>
+<li><a href="#skills/devops/azure-active-directory-b2c">azure-active-directory-b2c</a><div class="desc">Expert knowledge for Azure Active Directory B2C development including troublesho</div></li>
+<li><a href="#skills/devops/azure-advisor">azure-advisor</a><div class="desc">Expert knowledge for Azure Advisor development including best practices, decisio</div></li>
+<li><a href="#skills/devops/azure-ai">azure-ai</a><div class="desc">Use for Azure AI: Search, Speech, OpenAI, Document Intelligence. Helps with sear</div></li>
+<li><a href="#skills/devops/azure-ai-agents-persistent-dotnet">azure-ai-agents-persistent-dotnet</a><div class="desc">|</div></li>
+<li><a href="#skills/devops/azure-ai-agents-persistent-java">azure-ai-agents-persistent-java</a><div class="desc">|</div></li>
+<li><a href="#skills/devops/azure-ai-anomalydetector-java">azure-ai-anomalydetector-java</a><div class="desc">Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java</div></li>
+<li><a href="#skills/devops/azure-ai-contentsafety-java">azure-ai-contentsafety-java</a><div class="desc">Build content moderation applications with Azure AI Content Safety SDK for Java.</div></li>
+<li><a href="#skills/devops/azure-ai-contentsafety-py">azure-ai-contentsafety-py</a><div class="desc">|</div></li>
+<li><a href="#skills/devops/azure-ai-contentsafety-ts">azure-ai-contentsafety-ts</a><div class="desc">Analyze text and images for harmful content using Azure AI Content Safety (@azur</div></li>
+<li><a href="#skills/devops/azure-ai-contentunderstanding-py">azure-ai-contentunderstanding-py</a><div class="desc">|</div></li>
+<li><a href="#skills/devops/azure-ai-document-intelligence-dotnet">azure-ai-document-intelligence-dotnet</a><div class="desc">|</div></li>
+<li><a href="#skills/devops/azure-ai-document-intelligence-ts">azure-ai-document-intelligence-ts</a><div class="desc">Extract text, tables, and structured data from documents using Azure Document In</div></li>
+<li style="text-align:center;"><a href="#" style="color:#60a5fa;">查看全部 367 个技能 →</a></li></ul></div>
+
+            <div class="category-card" data-category="docs">
+                <h2>📝 Docs <span class="count">10</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/docs/academic-plotting">academic-plotting</a><div class="desc">Generates publication-quality figures for ML papers from research context. Given</div></li>
+<li><a href="#skills/docs/api-doc-generator">api-doc-generator</a><div class="desc">Generate API documentation by scanning Controller classes, extracting endpoint U</div></li>
+<li><a href="#skills/docs/doc-coauthoring">doc-coauthoring</a><div class="desc">Guide users through a structured three-stage workflow for co-authoring documenta</div></li>
+<li><a href="#skills/docs/full-stack-doc">full-stack-doc</a><div class="desc">></div></li>
+<li><a href="#skills/docs/mermaid">mermaid</a><div class="desc">Create Mermaid diagrams for Markdown documentation including flowcharts, sequenc</div></li>
+<li><a href="#skills/docs/ml-paper-writing">ml-paper-writing</a><div class="desc">Write publication-ready ML/AI papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM. U</div></li>
+<li><a href="#skills/docs/plantuml">plantuml</a><div class="desc">Create PlantUML diagrams for UML and architecture documentation including sequen</div></li>
+<li><a href="#skills/docs/presenting-conference-talks">presenting-conference-talks</a><div class="desc">Generates conference presentation slides (Beamer LaTeX PDF and editable PPTX) fr</div></li>
+<li><a href="#skills/docs/processon-mindmap">processon-mindmap</a><div class="desc">Create and manage mind maps on ProcessOn including node operations, styling, rea</div></li>
+<li><a href="#skills/docs/systems-paper-writing">systems-paper-writing</a><div class="desc">Comprehensive guide for writing systems papers targeting OSDI, SOSP, ASPLOS, NSD</div></li>
+</ul></div>
+
+            <div class="category-card" data-category="finance">
+                <h2>💰 Finance <span class="count">23</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/finance/aave">aave</a><div class="desc">Aave V3 lending protocol integration — supply, borrow, repay, withdraw, flash lo</div></li>
+<li><a href="#skills/finance/cloud-finops">cloud-finops</a><div class="desc">></div></li>
+<li><a href="#skills/finance/compound">compound</a><div class="desc">Compound V3 (Comet) lending protocol — supply, borrow, repay, withdraw, liquidat</div></li>
+<li><a href="#skills/finance/cs-financial-analyst">cs-financial-analyst</a><div class="desc">cs-financial-analyst command/skill</div></li>
+<li><a href="#skills/finance/curve">curve</a><div class="desc">Curve Finance AMM — StableSwap pools for pegged assets, CryptoSwap (Tricrypto) f</div></li>
+<li><a href="#skills/finance/dflow">dflow</a><div class="desc">Complete DFlow trading protocol SDK - the single source of truth for integrating</div></li>
+<li><a href="#skills/finance/drift">drift</a><div class="desc">Complete Drift Protocol SDK for building perpetual futures, spot trading, and De</div></li>
+<li><a href="#skills/finance/financial-health">financial-health</a><div class="desc">financial-health command/skill</div></li>
+<li><a href="#skills/finance/hyperliquid">hyperliquid</a><div class="desc">Hyperliquid perpetual futures DEX — order placement (market/limit/trigger/TWAP),</div></li>
+<li><a href="#skills/finance/kamino">kamino</a><div class="desc">Complete guide for Kamino Finance - Solana's leading DeFi protocol for lending, </div></li>
+<li><a href="#skills/finance/lido">lido</a><div class="desc">Lido liquid staking protocol — stake ETH to receive stETH, wrap to wstETH for De</div></li>
+<li><a href="#skills/finance/maker">maker</a><div class="desc">MakerDAO / Sky protocol -- Maker Vaults (CDPs) for DAI minting against collatera</div></li>
+<li><a href="#skills/finance/marginfi">marginfi</a><div class="desc">Complete guide for Marginfi - Solana's decentralized lending protocol for lendin</div></li>
+<li><a href="#skills/finance/meteora">meteora</a><div class="desc">Complete Meteora DeFi SDK suite for building liquidity pools, AMMs, bonding curv</div></li>
+<li><a href="#skills/finance/morpho">morpho</a><div class="desc">Morpho Blue lending protocol — permissionless market creation, MetaMorpho vaults</div></li>
+<li style="text-align:center;"><a href="#" style="color:#60a5fa;">查看全部 23 个技能 →</a></li></ul></div>
+
+            <div class="category-card" data-category="knowledge">
+                <h2>📚 Knowledge <span class="count">5</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/knowledge/wiki-ingest">wiki-ingest</a><div class="desc">wiki-ingest command/skill</div></li>
+<li><a href="#skills/knowledge/wiki-init">wiki-init</a><div class="desc">wiki-init command/skill</div></li>
+<li><a href="#skills/knowledge/wiki-lint">wiki-lint</a><div class="desc">wiki-lint command/skill</div></li>
+<li><a href="#skills/knowledge/wiki-log">wiki-log</a><div class="desc">wiki-log command/skill</div></li>
+<li><a href="#skills/knowledge/wiki-query">wiki-query</a><div class="desc">wiki-query command/skill</div></li>
+</ul></div>
+
+            <div class="category-card" data-category="leadership">
+                <h2>👔 Leadership <span class="count">2</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/leadership/cs-ceo-advisor">cs-ceo-advisor</a><div class="desc">cs-ceo-advisor command/skill</div></li>
+<li><a href="#skills/leadership/cs-cto-advisor">cs-cto-advisor</a><div class="desc">cs-cto-advisor command/skill</div></li>
+</ul></div>
+
+            <div class="category-card" data-category="learning">
+                <h2>📖 Learning <span class="count">3</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/learning/course-designer">course-designer</a><div class="desc">Design structured courses including syllabi, learning objectives using Bloom's t</div></li>
+<li><a href="#skills/learning/learning-assessor">learning-assessor</a><div class="desc">Create learning assessments including quizzes, exams, rubrics, and evaluation cr</div></li>
+<li><a href="#skills/learning/teaching-resource-generator">teaching-resource-generator</a><div class="desc">Generate teaching resources including slide deck outlines, progressive exercises</div></li>
+</ul></div>
+
+            <div class="category-card" data-category="product">
+                <h2>📦 Product <span class="count">17</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/product/code-to-prd">code-to-prd</a><div class="desc">code-to-prd command/skill</div></li>
+<li><a href="#skills/product/cs-agile-product-owner">cs-agile-product-owner</a><div class="desc">cs-agile-product-owner command/skill</div></li>
+<li><a href="#skills/product/cs-product-analyst">cs-product-analyst</a><div class="desc">cs-product-analyst command/skill</div></li>
+<li><a href="#skills/product/cs-product-manager">cs-product-manager</a><div class="desc">cs-product-manager command/skill</div></li>
+<li><a href="#skills/product/cs-product-strategist">cs-product-strategist</a><div class="desc">cs-product-strategist command/skill</div></li>
+<li><a href="#skills/product/cs-project-manager">cs-project-manager</a><div class="desc">cs-project-manager command/skill</div></li>
+<li><a href="#skills/product/cs-ux-researcher">cs-ux-researcher</a><div class="desc">cs-ux-researcher command/skill</div></li>
+<li><a href="#skills/product/okr">okr</a><div class="desc">okr command/skill</div></li>
+<li><a href="#skills/product/podcast-generation">podcast-generation</a><div class="desc">Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Real</div></li>
+<li><a href="#skills/product/prd">prd</a><div class="desc">prd command/skill</div></li>
+<li><a href="#skills/product/prd-writer">prd-writer</a><div class="desc">专业的产品需求文档（PRD）生成器，提供完整的文档结构和最佳实践</div></li>
+<li><a href="#skills/product/retro">retro</a><div class="desc">retro command/skill</div></li>
+<li><a href="#skills/product/rice">rice</a><div class="desc">rice command/skill</div></li>
+<li><a href="#skills/product/sprint-health">sprint-health</a><div class="desc">sprint-health command/skill</div></li>
+<li><a href="#skills/product/sprint-plan">sprint-plan</a><div class="desc">sprint-plan command/skill</div></li>
+<li style="text-align:center;"><a href="#" style="color:#60a5fa;">查看全部 17 个技能 →</a></li></ul></div>
+
+            <div class="category-card" data-category="tools">
+                <h2>🔧 Tools <span class="count">267</span></h2>
+                <ul class="skill-list">
+<li><a href="#skills/tools/"pencil"">pencil</a><div class="desc">用于通过 Pencil MCP 读取/修改 .pen 设计文件并校验布局。用户提到 pencil/.pen/设计稿编辑、需要列出工具或执行 batch_get/</div></li>
+<li><a href="#skills/tools/account-abstraction">account-abstraction</a><div class="desc">ERC-4337 and EIP-7702 unified reference — EntryPoint v0.7 architecture, UserOper</div></li>
+<li><a href="#skills/tools/adobe-xd">adobe-xd</a><div class="desc">Guides creation of UI/UX designs, interactive prototypes, reusable components, a</div></li>
+<li><a href="#skills/tools/agent-browser">agent-browser</a><div class="desc">Automates browser interactions via CLI using agent-browser by Vercel Labs. Cover</div></li>
+<li><a href="#skills/tools/ansible">ansible</a><div class="desc">Provides comprehensive guidance for Ansible automation including playbooks, role</div></li>
+<li><a href="#skills/tools/ascii-ansi-colorizer">ascii-ansi-colorizer</a><div class="desc">Add an ANSI color layer to existing ASCII/plain-text output (gradient/rainbow/hi</div></li>
+<li><a href="#skills/tools/ascii-cli-logo-banner">ascii-cli-logo-banner</a><div class="desc">Entry point for ASCII CLI banners that routes to the Python built-in font skill </div></li>
+<li><a href="#skills/tools/ascii-cli-logo-banner-figletjs">ascii-cli-logo-banner-figletjs</a><div class="desc">Generate TAAG/FIGlet-style ASCII art banners using figlet.js (FIGfont spec), wit</div></li>
+<li><a href="#skills/tools/ascii-cli-logo-banner-python">ascii-cli-logo-banner-python</a><div class="desc">Generate copy-pastable ASCII banners with a built-in font (no external font deps</div></li>
+<li><a href="#skills/tools/ascii-diagram-boxflow">ascii-diagram-boxflow</a><div class="desc">Generate plain ASCII box-flow diagrams (boxes + arrows) for environments without</div></li>
+<li><a href="#skills/tools/ascii-image-to-ascii">ascii-image-to-ascii</a><div class="desc">“Convert an image into ASCII art (readable + detail variants, width/charset cont</div></li>
+<li><a href="#skills/tools/ascii-mini-charts">ascii-mini-charts</a><div class="desc">Generate ASCII mini charts (sparkline/bar/simple line) for plain-text trend insp</div></li>
+<li><a href="#skills/tools/ascii-motd-profile-banner">ascii-motd-profile-banner</a><div class="desc">Generate ASCII-only MOTD / SSH login banner / shell profile welcome messages (sh</div></li>
+<li><a href="#skills/tools/ascii-progress-and-spinner">ascii-progress-and-spinner</a><div class="desc">Design ASCII progress bars and spinners for CLI UX (determinate/indeterminate, T</div></li>
+<li><a href="#skills/tools/ascii-table-renderer">ascii-table-renderer</a><div class="desc">Render structured data as aligned ASCII tables (column width rules, truncate/wra</div></li>
+<li style="text-align:center;"><a href="#" style="color:#60a5fa;">查看全部 267 个技能 →</a></li></ul></div>
+
+        </div>
+        
+        <footer>
+            <p>AI-SKILL | 作者: <a href="https://github.com/badhope">badhope</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        function filterSkills() {
+            const q = document.getElementById('search').value.toLowerCase();
+            document.querySelectorAll('.category-card').forEach(c => {
+                c.style.display = c.textContent.toLowerCase().includes(q) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

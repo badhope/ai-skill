@@ -1,0 +1,422 @@
+{
+  "alibaba": [
+    {
+      "name": "spring-ai-alibaba",
+      "path": "skills/development/spring-ai-alibaba"
+    },
+    {
+      "name": "spring-cloud-alibaba",
+      "path": "skills/development/spring-cloud-alibaba"
+    }
+  ],
+  "baidu": [
+    {
+      "name": "uniapp-mini",
+      "path": "skills/development/uniapp-mini"
+    }
+  ],
+  "claude": [
+    {
+      "name": "Claude Code Guide",
+      "path": "skills/ai/Claude Code Guide"
+    },
+    {
+      "name": "agentflow",
+      "path": "skills/ai/agentflow"
+    },
+    {
+      "name": "agents-md",
+      "path": "skills/ai/agents-md"
+    },
+    {
+      "name": "ai-md",
+      "path": "skills/ai/ai-md"
+    },
+    {
+      "name": "amazon-alexa",
+      "path": "skills/ai/amazon-alexa"
+    },
+    {
+      "name": "aomi-transact",
+      "path": "skills/ai/aomi-transact"
+    },
+    {
+      "name": "apify-actor-development",
+      "path": "skills/ai/apify-actor-development"
+    },
+    {
+      "name": "auri-core",
+      "path": "skills/ai/auri-core"
+    },
+    {
+      "name": "blockrun",
+      "path": "skills/ai/blockrun"
+    },
+    {
+      "name": "cc-skill-continuous-learning",
+      "path": "skills/ai/cc-skill-continuous-learning"
+    },
+    {
+      "name": "cc-skill-strategic-compact",
+      "path": "skills/ai/cc-skill-strategic-compact"
+    },
+    {
+      "name": "claude-ally-health",
+      "path": "skills/ai/claude-ally-health"
+    },
+    {
+      "name": "claude-api",
+      "path": "skills/ai/claude-api"
+    },
+    {
+      "name": "claude-code-expert",
+      "path": "skills/ai/claude-code-expert"
+    },
+    {
+      "name": "claude-code-guide",
+      "path": "skills/ai/claude-code-guide"
+    },
+    {
+      "name": "claude-d3js-skill",
+      "path": "skills/ai/claude-d3js-skill"
+    },
+    {
+      "name": "claude-in-chrome-troubleshooting",
+      "path": "skills/ai/claude-in-chrome-troubleshooting"
+    },
+    {
+      "name": "claude-monitor",
+      "path": "skills/ai/claude-monitor"
+    },
+    {
+      "name": "claude-scientific-skills",
+      "path": "skills/ai/claude-scientific-skills"
+    },
+    {
+      "name": "claude-settings-audit",
+      "path": "skills/ai/claude-settings-audit"
+    },
+    {
+      "name": "claude-speed-reader",
+      "path": "skills/ai/claude-speed-reader"
+    },
+    {
+      "name": "claude-win11-speckit-update-skill",
+      "path": "skills/ai/claude-win11-speckit-update-skill"
+    },
+    {
+      "name": "context7-auto-research",
+      "path": "skills/ai/context7-auto-research"
+    },
+    {
+      "name": "devcontainer-setup",
+      "path": "skills/ai/devcontainer-setup"
+    },
+    {
+      "name": "docx",
+      "path": "skills/ai/docx"
+    },
+    {
+      "name": "ffuf-claude-skill",
+      "path": "skills/ai/ffuf-claude-skill"
+    },
+    {
+      "name": "geo-fundamentals",
+      "path": "skills/ai/geo-fundamentals"
+    },
+    {
+      "name": "hierarchical-agent-memory",
+      "path": "skills/ai/hierarchical-agent-memory"
+    },
+    {
+      "name": "hig-components-controls",
+      "path": "skills/ai/hig-components-controls"
+    },
+    {
+      "name": "hig-components-menus",
+      "path": "skills/ai/hig-components-menus"
+    },
+    {
+      "name": "hig-inputs",
+      "path": "skills/ai/hig-inputs"
+    },
+    {
+      "name": "hig-technologies",
+      "path": "skills/ai/hig-technologies"
+    },
+    {
+      "name": "internal-comms",
+      "path": "skills/ai/internal-comms"
+    },
+    {
+      "name": "linear-claude-skill",
+      "path": "skills/ai/linear-claude-skill"
+    },
+    {
+      "name": "logic-lens",
+      "path": "skills/ai/logic-lens"
+    },
+    {
+      "name": "loki-mode",
+      "path": "skills/ai/loki-mode"
+    },
+    {
+      "name": "manage-skills",
+      "path": "skills/ai/manage-skills"
+    },
+    {
+      "name": "news-sentiment-engine",
+      "path": "skills/ai/news-sentiment-engine"
+    },
+    {
+      "name": "notebooklm",
+      "path": "skills/ai/notebooklm"
+    },
+    {
+      "name": "offer-k-dense-web",
+      "path": "skills/ai/offer-k-dense-web"
+    },
+    {
+      "name": "pdf",
+      "path": "skills/ai/pdf"
+    },
+    {
+      "name": "pptx",
+      "path": "skills/ai/pptx"
+    },
+    {
+      "name": "product-marketing-context",
+      "path": "skills/ai/product-marketing-context"
+    },
+    {
+      "name": "skill-check",
+      "path": "skills/ai/skill-check"
+    },
+    {
+      "name": "skill-developer",
+      "path": "skills/ai/skill-developer"
+    },
+    {
+      "name": "skill-improver",
+      "path": "skills/ai/skill-improver"
+    },
+    {
+      "name": "skill-optimizer",
+      "path": "skills/ai/skill-optimizer"
+    },
+    {
+      "name": "skill-seekers",
+      "path": "skills/ai/skill-seekers"
+    },
+    {
+      "name": "superpowers-lab",
+      "path": "skills/ai/superpowers-lab"
+    },
+    {
+      "name": "tokenwise",
+      "path": "skills/ai/tokenwise"
+    },
+    {
+      "name": "varlock",
+      "path": "skills/ai/varlock"
+    },
+    {
+      "name": "varlock-claude-skill",
+      "path": "skills/ai/varlock-claude-skill"
+    },
+    {
+      "name": "vexor",
+      "path": "skills/ai/vexor"
+    },
+    {
+      "name": "xlsx",
+      "path": "skills/ai/xlsx"
+    },
+    {
+      "name": "xvary-stock-research",
+      "path": "skills/ai/xvary-stock-research"
+    },
+    {
+      "name": "constitutional-ai",
+      "path": "skills/compliance/constitutional-ai"
+    },
+    {
+      "name": "claude-api",
+      "path": "skills/development/claude-api"
+    },
+    {
+      "name": "web-artifacts-builder",
+      "path": "skills/development/web-artifacts-builder"
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "path": "skills/tools/git-guardrails-claude-code"
+    },
+    {
+      "name": "skill-creator",
+      "path": "skills/tools/skill-creator"
+    },
+    {
+      "name": "speckit-check",
+      "path": "skills/tools/speckit-check"
+    }
+  ],
+  "codex": [
+    {
+      "name": "aomi-transact",
+      "path": "skills/ai/aomi-transact"
+    },
+    {
+      "name": "codex-review",
+      "path": "skills/ai/codex-review"
+    },
+    {
+      "name": "manage-skills",
+      "path": "skills/ai/manage-skills"
+    },
+    {
+      "name": "pathml",
+      "path": "skills/ai/pathml"
+    },
+    {
+      "name": "skill-optimizer",
+      "path": "skills/ai/skill-optimizer"
+    },
+    {
+      "name": "vexor",
+      "path": "skills/ai/vexor"
+    },
+    {
+      "name": "xvary-stock-research",
+      "path": "skills/ai/xvary-stock-research"
+    },
+    {
+      "name": "speckit-check",
+      "path": "skills/tools/speckit-check"
+    }
+  ],
+  "cursor": [
+    {
+      "name": "aomi-transact",
+      "path": "skills/ai/aomi-transact"
+    },
+    {
+      "name": "computer-use-agents",
+      "path": "skills/ai/computer-use-agents"
+    },
+    {
+      "name": "manage-skills",
+      "path": "skills/ai/manage-skills"
+    },
+    {
+      "name": "xvary-stock-research",
+      "path": "skills/ai/xvary-stock-research"
+    },
+    {
+      "name": "speckit-check",
+      "path": "skills/tools/speckit-check"
+    }
+  ],
+  "gemini": [
+    {
+      "name": "aegisops-ai",
+      "path": "skills/ai/aegisops-ai"
+    },
+    {
+      "name": "ai-studio-image",
+      "path": "skills/ai/ai-studio-image"
+    },
+    {
+      "name": "aomi-transact",
+      "path": "skills/ai/aomi-transact"
+    },
+    {
+      "name": "deep-research",
+      "path": "skills/ai/deep-research"
+    },
+    {
+      "name": "gemini-api-dev",
+      "path": "skills/ai/gemini-api-dev"
+    },
+    {
+      "name": "gemini-api-integration",
+      "path": "skills/ai/gemini-api-integration"
+    },
+    {
+      "name": "infographics",
+      "path": "skills/ai/infographics"
+    },
+    {
+      "name": "nerdzao-elite-gemini-high",
+      "path": "skills/ai/nerdzao-elite-gemini-high"
+    },
+    {
+      "name": "notebooklm",
+      "path": "skills/ai/notebooklm"
+    },
+    {
+      "name": "pipecat-friday-agent",
+      "path": "skills/ai/pipecat-friday-agent"
+    },
+    {
+      "name": "scientific-schematics",
+      "path": "skills/ai/scientific-schematics"
+    },
+    {
+      "name": "academic-plotting",
+      "path": "skills/docs/academic-plotting"
+    },
+    {
+      "name": "speckit-check",
+      "path": "skills/tools/speckit-check"
+    },
+    {
+      "name": "stitch-mcp-generate-screen-from-text",
+      "path": "skills/tools/stitch-mcp-generate-screen-from-text"
+    }
+  ],
+  "qwen": [
+    {
+      "name": "implementing-llms-litgpt",
+      "path": "skills/ai/implementing-llms-litgpt"
+    },
+    {
+      "name": "speckit-check",
+      "path": "skills/tools/speckit-check"
+    }
+  ],
+  "spark": [
+    {
+      "name": "spark-optimization",
+      "path": "skills/ai/spark-optimization"
+    },
+    {
+      "name": "azure-databricks",
+      "path": "skills/devops/azure-databricks"
+    },
+    {
+      "name": "azure-event-hubs",
+      "path": "skills/devops/azure-event-hubs"
+    },
+    {
+      "name": "azure-hdinsight",
+      "path": "skills/devops/azure-hdinsight"
+    },
+    {
+      "name": "azure-open-datasets",
+      "path": "skills/devops/azure-open-datasets"
+    },
+    {
+      "name": "azure-synapse-analytics",
+      "path": "skills/devops/azure-synapse-analytics"
+    },
+    {
+      "name": "maker",
+      "path": "skills/finance/maker"
+    },
+    {
+      "name": "ascii-mini-charts",
+      "path": "skills/tools/ascii-mini-charts"
+    }
+  ]
+}
